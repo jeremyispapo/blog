@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+button {
+    color: white;
+    background: tomato;
+    padding: .5em;
+    border: none;
+    border-radius: .4em;
+    font-size: 1.1em;
+}
+
+body{
+    
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* background: #fda632; */
+    position: fixed;
+    width: 100%;
+    /* display: none; */
+    z-index: 3;
+}
+
+.logo{
+    margin-left: 1em;
+}
+
+nav {
+    width: 50%;
+}
+
+ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: .5em;
+    background: rgb(59, 59, 59);
+    border-radius: .4em;
+}
+
+/*----------------HERO------------*/
+
+.hero {
+    background: url(img/pexels-janko-ferlic-590493\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.titulos {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.naranja {
+    color: tomato;
+}
+
+/*------------ORIGINALES-----------*/
+
+.ultima {
+    width: 90%;
+    border-radius: 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 13px 4px rgb(209, 209, 209);
+}
+
+.sub {
+    width: 100%;
+    /* margin-left:2em; */
+    color: tomato;
+    text-decoration: underline;
+    font-size: 1.6em;
+    margin-bottom: 1em;
+}
+
+figure {
+    width: 48%;
+}
+
+.post img {
+    width: 100%;
+}
+
+.ultima p {
+    width: 49%;
+    font-size: 1.4em;
+}
+
+.articulos {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.articulo {
+    width: 30%;
+    height: auto;
+    box-shadow: 0px 0px 13px 4px rgb(209, 209, 209);
+    padding: .5em;
+    border-radius: .4em;
+}
+
+.articulo figure {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 1em;
+}
+
+figure img {
+    border-radius: .4em;
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    text-align: center;
+}
+
+/*--------------RESUMENES-------------*/
+
+.resumenes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3em;
+}
+
+.resumen-contain{
+    position: relative;
+    width: 30%;
+    height: 70vh;
+    /* background: green; */
+}
+
+.resumen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all .7s ease;
+    /* background: yellow; */
+}
+
+.resumen:hover {
+    transform: rotateY(180deg);
+}
+
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* background: #ffc728; */
+    color: #333;
+}
+
+
+.front figure{
+    width: 100%;
+    height: 100%;
+}
+
+.front figure img {
+    object-fit: cover;
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #ccc;
+    border-radius: .4em;
+    color: #333;
+    transform: rotateY(180deg);
+}
+
+.back h1 {
+    font-size: 1.5em;
+}
+
+/*-----------CONTACTO-----------*/
+
+.contacto {
+    background: url(img/pexels-janko-ferlic-590493\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    backdrop-filter: blur(10px);
+    width: 60%;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    border-radius: .4em;
+}
+
+span{
+    font-weight: 700;
+}
+
+.nombre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre input {
+    padding: 1.25em;
+    border-radius: .4em;
+    border: none;
+}
+
+.email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.email input {
+    padding: 1.25em;
+    border-radius: .4em;
+    border: none;
+}
+
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="submit"]{
+    padding: .5em;
+    border: none;
+    background: tomato;
+    border-radius: .4em;
+    color: white;
+
+}
+
+footer {
+    background: tomato;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
