@@ -181,7 +181,7 @@ figure img {
     /* background: yellow; */
 }
 
-.resumen:hover {
+.resumen-contain:hover .resumen {
     transform: rotateY(180deg);
 }
 
